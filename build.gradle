@@ -1,8 +1,9 @@
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.0.3'
+    ext.kotlin_version = '1.0.4'
     ext.kotlintest_version = '1.1.6'
+    ext.mockito_kotlin = '0.7.0'
     ext.kodein_version = '3.1.0'
 
     repositories {
@@ -24,6 +25,7 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "com.github.salomonbrys.kodein:kodein:$kodein_version"
 
+    testCompile "com.nhaarman:mockito-kotlin:$mockito_kotlin"
     testCompile "io.kotlintest:kotlintest:$kotlintest_version"
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
