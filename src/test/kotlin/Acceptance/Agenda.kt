@@ -1,4 +1,0 @@
-package Acceptance
-
-class Agenda {
-}
